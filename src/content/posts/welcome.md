@@ -1,6 +1,6 @@
 ---
 title: 欢迎来到人生实验室
-published: 2026-06-21
+published: 2026-06-01
 description: 这是我的第一篇博客文章，记录博客的开始。
 tags: [博客, 开始]
 category: 随笔
