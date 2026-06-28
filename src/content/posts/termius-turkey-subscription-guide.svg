@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" font-family="'Segoe UI', -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="step1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="step2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="step3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="step4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="step5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="step6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="900" fill="url(#bg)"/>
+  <rect width="800" height="900" fill="url(#bg)" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="52" text-anchor="middle" fill="#f1f5f9" font-size="22" font-weight="700">Termius 土区订阅完整流程</text>
+  <text x="400" y="76" text-anchor="middle" fill="#94a3b8" font-size="13">20元/年 · 土耳其区 · 6步搞定</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1 -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="100" width="560" height="90" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="120" y="100" width="6" height="90" rx="3" fill="url(#step1)"/>
+    <circle cx="165" cy="145" r="24" fill="url(#step1)"/>
+    <text x="165" y="150" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">1</text>
+    <text x="205" y="132" fill="#e2e8f0" font-size="16" font-weight="600">准备工具</text>
+    <text x="205" y="154" fill="#94a3b8" font-size="12">土耳其魔法 • 迅游加速器 • 礼品卡 • Termius 老版本安装包</text>
+    <text x="205" y="174" fill="#64748b" font-size="11">⚠️ 推荐 Windows 10+ 电脑操作，Termius 9.12.0.0 版本是关键</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="400" y1="190" x2="400" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="225" width="560" height="90" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="120" y="225" width="6" height="90" rx="3" fill="url(#step2)"/>
+    <circle cx="165" cy="270" r="24" fill="url(#step2)"/>
+    <text x="165" y="275" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">2</text>
+    <text x="205" y="257" fill="#e2e8f0" font-size="16" font-weight="600">注册微软土区账号</text>
+    <text x="205" y="279" fill="#94a3b8" font-size="12">开土耳其魔法 → 微软注册页面 → 选择土耳其 (Turkey)</text>
+    <text x="205" y="299" fill="#64748b" font-size="11">⚠️ 地区必须自动显示 Turkey，否则换魔法！生日选18岁以上</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="400" y1="315" x2="400" y2="345" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="350" width="560" height="90" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="120" y="350" width="6" height="90" rx="3" fill="url(#step3)"/>
+    <circle cx="165" cy="395" r="24" fill="url(#step3)"/>
+    <text x="165" y="400" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">3</text>
+    <text x="205" y="382" fill="#e2e8f0" font-size="16" font-weight="600">修改系统时区 &amp; 地区</text>
+    <text x="205" y="404" fill="#94a3b8" font-size="12">Windows 设置 → 时区切换为 UTC+3 伊斯坦布尔</text>
+    <text x="205" y="424" fill="#64748b" font-size="11">地区选土耳其 (Turkey) — 匹配你的微软账号区域</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="400" y1="440" x2="400" y2="470" stroke="#475569" stroke-width="2" marker-end="url(#marker-end)"/>
+
+  <!-- Step 4 -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="475" width="560" height="90" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="120" y="475" width="6" height="90" rx="3" fill="url(#step4)"/>
+    <circle cx="165" cy="520" r="24" fill="url(#step4)"/>
+    <text x="165" y="525" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">4</text>
+    <text x="205" y="507" fill="#e2e8f0" font-size="16" font-weight="600">兑换礼品卡</text>
+    <text x="205" y="529" fill="#94a3b8" font-size="12">关闭魔法 → 开迅游加速器（免费加速微软商店）</text>
+    <text x="205" y="549" fill="#64748b" font-size="11">确认商店货币显示 ₺（土耳其里拉）→ 右上角兑换</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <line x1="400" y1="565" x2="400" y2="595" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5 -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="600" width="560" height="90" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="120" y="600" width="6" height="90" rx="3" fill="url(#step5)"/>
+    <circle cx="165" cy="645" r="24" fill="url(#step5)"/>
+    <text x="165" y="650" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">5</text>
+    <text x="205" y="632" fill="#e2e8f0" font-size="16" font-weight="600">安装老版本 Termius</text>
+    <text x="205" y="654" fill="#94a3b8" font-size="12">卸载现有 Termius → 双击安装 Termius 9.12.0.0</text>
+    <text x="205" y="674" fill="#64748b" font-size="11">💡 如果双击报错，用 PowerShell 执行 Add-AppxPackage 命令安装</text>
+  </g>
+
+  <!-- Arrow 5 -->
+  <line x1="400" y1="690" x2="400" y2="720" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6 -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="725" width="560" height="90" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="120" y="725" width="6" height="90" rx="3" fill="url(#step6)"/>
+    <circle cx="165" cy="770" r="24" fill="url(#step6)"/>
+    <text x="165" y="775" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">6</text>
+    <text x="205" y="757" fill="#e2e8f0" font-size="16" font-weight="600">订阅兑换</text>
+    <text x="205" y="779" fill="#94a3b8" font-size="12">开土耳其魔法（全局）→ Exempt All → 打开 Termius → Upgrade Now</text>
+    <text x="205" y="799" fill="#64748b" font-size="11">显示 ₺85/Year 即成功！被风控了等7天再试</text>
+  </g>
+
+  <!-- Price Tag -->
+  <g filter="url(#shadow)">
+    <rect x="300" y="835" width="200" height="48" rx="24" fill="#065f46" stroke="#34d399" stroke-width="1.5"/>
+    <text x="400" y="858" text-anchor="middle" fill="#34d399" font-size="15" font-weight="700">₺85/年 ≈ 20 元/年</text>
+    <text x="400" y="874" text-anchor="middle" fill="#6ee7b7" font-size="10">免 Docker 免 SSL 免域名</text>
+  </g>
+
+  <!-- Source -->
+  <text x="400" y="892" text-anchor="middle" fill="#475569" font-size="9">来源：nodeseek.com/post-295429-1</text>
+</svg>
