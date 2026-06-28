@@ -5,7 +5,7 @@ description: 基于 Docker Compose 的完整媒体库搭建教程，从 CloudDri
 tags: [Docker, NAS, Emby, 媒体中心, 网盘, "115"]
 category: 技术教程
 draft: false
-image: ""
+image: ./media-center-cover.svg
 ---
 
 > 基于 Docker Compose 部署，每个服务独立一个 compose 文件  
