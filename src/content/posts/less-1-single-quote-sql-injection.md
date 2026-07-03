@@ -8,8 +8,6 @@ draft: false
 image: ./less-1-01.png
 ---
 
-# Less-1：单引号字符型注入
-
 ## 一、正常访问
 
 ![Less-1 初始页面](./less-1-01.png)
