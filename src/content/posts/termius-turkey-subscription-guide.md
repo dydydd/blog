@@ -5,7 +5,7 @@ description: 利用微软土耳其区定价差异，把 Termius Premium 的年�
 tags: [Termius, SSH, 土耳其, 薅羊毛, 微软商店, 教程]
 category: 技术教程
 draft: false
-image: ./termius-region-turkey.jpeg
+image: ../../assets/images/posts/termius-turkey-subscription-guide/termius-region-turkey.jpeg
 ---
 
 > **原帖来源：** [NodeSeek 论坛 · 保姆级教程](https://www.nodeseek.com/post-295429-1) — 感谢原作者 Lite 的两周踩坑经验
@@ -43,11 +43,11 @@ Termius 是跨平台 SSH 客户端里的明星产品，界面美观、支持 SFT
 2. 推荐用「Get a new email address」新建一个 Outlook 邮箱
 3. 正常填写信息走注册流程
 
-![注册页面，建议新建 Outlook 邮箱](./termius-registration-page.jpeg)
+![注册页面，建议新建 Outlook 邮箱](../../assets/images/posts/termius-turkey-subscription-guide/termius-registration-page.jpeg)
 
 > ⚠️ **关键检查点：** 在生日选择页面，看一下右下角的「国家/地区」是不是默认显示 **Turkey（土耳其）**。如果不是，说明你的代理 IP 被识别到了其他国家，需要换一个土耳其节点重新来。生日随便选，满 18 岁就行。
 
-![确保国家/地区显示 Turkey](./termius-region-turkey.jpeg)
+![确保国家/地区显示 Turkey](../../assets/images/posts/termius-turkey-subscription-guide/termius-region-turkey.jpeg)
 
 ---
 
@@ -60,7 +60,7 @@ Windows 的时区和地区设置需要对齐到土耳其，不然微软商店可
 
 设置路径：Windows 设置 → 时间和语言 → 区域
 
-![时区设置为 UTC+03:00 伊斯坦布尔](./termius-timezone-istanbul.jpeg)
+![时区设置为 UTC+03:00 伊斯坦布尔](../../assets/images/posts/termius-turkey-subscription-guide/termius-timezone-istanbul.jpeg)
 
 ---
 
@@ -76,14 +76,14 @@ Windows 的时区和地区设置需要对齐到土耳其，不然微软商店可
 
 加速成功后微软商店会自动切换到土耳其区，这时候你能看到各种软件都标着里拉价格：
 
-![微软商店切换到土耳其区后的界面](./termius-store-turkish.jpeg)
-![土耳其区商店内的游戏和应用定价](./termius-store-pricing.jpeg)
+![微软商店切换到土耳其区后的界面](../../assets/images/posts/termius-turkey-subscription-guide/termius-store-turkish.jpeg)
+![土耳其区商店内的游戏和应用定价](../../assets/images/posts/termius-turkey-subscription-guide/termius-store-pricing.jpeg)
 
 > 💡 如果你的系统是精简版，或者商店曾经出现过异常，**务必走这一步**，否则后面订阅时可能弹不出付款窗口。
 
 兑换礼品卡的页面：
 
-![兑换礼品卡界面](./termius-redeem-card.jpeg)
+![兑换礼品卡界面](../../assets/images/posts/termius-turkey-subscription-guide/termius-redeem-card.jpeg)
 
 ---
 
@@ -101,7 +101,7 @@ Windows 的时区和地区设置需要对齐到土耳其，不然微软商店可
 >
 > 把路径替换为你的实际下载位置。
 
-![通过 PowerShell 管理员模式安装](./termius-powershell.jpeg)
+![通过 PowerShell 管理员模式安装](../../assets/images/posts/termius-turkey-subscription-guide/termius-powershell.jpeg)
 
 ---
 
@@ -112,18 +112,18 @@ Windows 的时区和地区设置需要对齐到土耳其，不然微软商店可
 1. 打开 **AppContainer Loopback Utility**
 2. 点击 **"Exempt All"** 按钮，然后最小化窗口（不用关）
 
-![AppContainer Loopback Utility — 点击 Exempt All](./termius-loopback.jpeg)
+![AppContainer Loopback Utility — 点击 Exempt All](../../assets/images/posts/termius-turkey-subscription-guide/termius-loopback.jpeg)
 
 3. 打开 Termius，登录你的微软土区账号
 4. 点击右上角的 **"Upgrade Now"**
 5. 正常情况下你会看到 **₺85/Year** 的价格——也就是 **20 块钱一年**
 
-![Termius 显示 ₺85/年 — 关键！](./termius-subscription-price.jpeg)
+![Termius 显示 ₺85/年 — 关键！](../../assets/images/posts/termius-turkey-subscription-guide/termius-subscription-price.jpeg)
 
 6. 点击购买，走正常付款流程
 7. 如果需要填地址，用土耳其地址生成器生成一个就行
 
-![订阅成功确认页面](./termius-purchase-confirm.jpeg)
+![订阅成功确认页面](../../assets/images/posts/termius-turkey-subscription-guide/termius-purchase-confirm.jpeg)
 
 > ⚠️ **如果出现风控提示：** 说明微软的风控系统认定你的账号有跨区嫌疑。**不要慌，等 7 天**，之后再重复上面的兑换步骤就能成功。
 

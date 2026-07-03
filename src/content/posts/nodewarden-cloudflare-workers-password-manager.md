@@ -5,7 +5,7 @@ description: NodeWarden 是运行在 Cloudflare Workers 上的 Bitwarden 兼容�
 tags: [NodeWarden, Bitwarden, 密码管理, Cloudflare, Workers, 自托管, 开源]
 category: 技术教程
 draft: false
-image: ./nodewarden-cover.jpg
+image: ../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-cover.jpg
 ---
 
 > **项目地址：** [github.com/shuaiplus/nodewarden](https://github.com/shuaiplus/nodewarden)
@@ -21,7 +21,7 @@ Bitwarden 是当下最好的开源密码管理器之一，但自托管它一直�
 
 如果你说"我只是想自己管密码，不想为了一台密码服务器每个月多花 5 刀买 VPS"，那 NodeWarden 就是为你准备的。
 
-![NodeWarden 项目 Logo](./nodewarden-logo.png)
+![NodeWarden 项目 Logo](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-logo.png)
 
 ## NodeWarden 是什么？
 
@@ -113,13 +113,13 @@ NodeWarden 的部署可以说是目前所有自托管密码方案里最简单的
 
 打开 [github.com/shuaiplus/nodewarden](https://github.com/shuaiplus/nodewarden)，点击右上角的 Fork。
 
-![Fork NodeWarden 仓库到自己的 GitHub](./nodewarden-fork.avif)
+![Fork NodeWarden 仓库到自己的 GitHub](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-fork.avif)
 
 **第二步：连接 Cloudflare Workers**
 
 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)，进入 Workers & Pages → 创建 → 选择「连接到 GitHub」，找到并选中你 Fork 的仓库。
 
-![Cloudflare Workers 部署配置页面](./nodewarden-settings.avif)
+![Cloudflare Workers 部署配置页面](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-settings.avif)
 
 **第三步：配置构建参数**
 
@@ -127,7 +127,7 @@ NodeWarden 的部署可以说是目前所有自托管密码方案里最简单的
 
 > 如果你想省掉绑卡这一步，把部署命令改成 `npm run deploy:kv` 用 KV 模式，免费额度 1GB，单文件上限 25MB。
 
-![CF 部署按钮](./nodewarden-deploy-btn.avif)
+![CF 部署按钮](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-deploy-btn.avif)
 
 **第四步：添加 JWT_SECRET**
 
@@ -137,24 +137,24 @@ NodeWarden 的部署可以说是目前所有自托管密码方案里最简单的
 
 首次访问 Workers 域名会自动进入设置页面，按提示填写管理员邮箱和主密码即可。
 
-![NodeWarden 设置页面](./nodewarden-setup.avif)
+![NodeWarden 设置页面](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-setup.avif)
 
 **第六步：完成！**
 
 设置完成后会显示成功页面，你可以选择隐藏设置入口（推荐）。
 
-![部署完成页面](./nodewarden-complete.avif)
+![部署完成页面](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-complete.avif)
 
 ### 在客户端登录
 
 在 Bitwarden 官方客户端中，选择「自托管」登录方式，填入你的 Workers 域名作为服务器 URL：
 
-![手机端登录 NodeWarden](./nodewarden-mobile-login.avif)
+![手机端登录 NodeWarden](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-mobile-login.avif)
 
 登录后就可以正常使用了，所有的密码同步、自动填充、TOTP 验证码全部正常：
 
-![手机端密码库界面](./nodewarden-mobile-vault.avif)
-![密码详情页面](./nodewarden-vault-detail.avif)
+![手机端密码库界面](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-mobile-vault.avif)
+![密码详情页面](../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-vault-detail.avif)
 
 ### 更新方法
 

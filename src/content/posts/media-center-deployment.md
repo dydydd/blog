@@ -5,7 +5,7 @@ description: 基于 Docker Compose 的完整媒体库搭建教程，从 CloudDri
 tags: [Docker, NAS, Emby, 媒体中心, 网盘, "115"]
 category: 技术教程
 draft: false
-image: ./media-center-cover.jpg
+image: ../../assets/images/posts/media-center-deployment/media-center-cover.jpg
 ---
 
 > 基于 Docker Compose 部署，每个服务独立一个 compose 文件  
@@ -197,7 +197,7 @@ docker compose up -d
 
 设置 → 全局设置
 
-![全局设置](https://images.symedia.top/2025/04/07/20250407072643343.png)
+![全局设置](../../assets/images/posts/media-center-deployment/media-center-global-settings.png)
 
 - 云盘根目录：`/CloudNAS/CloudDrive`
 - 链接同步间隔：按需设置
@@ -209,7 +209,7 @@ docker compose up -d
 
 插件 → CloudDrive2 助手
 
-![CD2助手基本配置](https://images.symedia.top/2025/04/07/20250407073433144.png)
+![CD2助手基本配置](../../assets/images/posts/media-center-deployment/media-center-cd2-helper.png)
 
 - CD2 IP：CD2 所在地址（不要加 http://）
 - 端口：`19798`
@@ -249,7 +249,7 @@ docker compose up -d
 
 设置 → 通知
 
-![通知配置](https://images.symedia.top/2025/04/07/20250407072643343.png)
+![通知配置](../../assets/images/posts/media-center-deployment/media-center-global-settings.png)
 
 配置 Telegram Bot：
 1. Telegram 搜索 @BotFather → `/newbot` → 创建机器人 → 保存 API Token
@@ -261,11 +261,11 @@ docker compose up -d
 
 前往 [StrmAssistant Releases](https://github.com/sjtuross/StrmAssistant/releases) 下载插件，放入 Emby 的 `plugins` 文件夹，重启 Emby。
 
-![神医插件安装](https://images.symedia.top/2025/04/14/20250414210241_6e6613f0.png)
+![神医插件安装](../../assets/images/posts/media-center-deployment/media-center-strmassistant-install.png)
 
 重启后在 Emby 设置中出现"神医助手"即成功。
 
-![神医插件设置](https://images.symedia.top/2025/04/14/20250414210444_f02152ed.png)
+![神医插件设置](../../assets/images/posts/media-center-deployment/media-center-strmassistant-settings.png)
 
 推荐开启"提取视频信息"功能，这能显著加快 Strm 文件的起播速度。
 
@@ -281,11 +281,11 @@ docker compose up -d
 
 **聚合搜索：** 搜索 → 设置 → 填入 Telegram 频道 ID
 
-![聚合搜索配置](https://images.symedia.top/2025/04/07/20250407073459087.png)
+![聚合搜索配置](../../assets/images/posts/media-center-deployment/media-center-aggregate-search.png)
 
 **网盘转存：** 插件 → 对应网盘助手 → 填入 cid（文件夹 ID）
 
-![网盘转存配置](https://images.symedia.top/2025/04/07/20250407074646569.png)
+![网盘转存配置](../../assets/images/posts/media-center-deployment/media-center-cloud-transfer.png)
 
 配置后，发送网盘分享链接给 Telegram Bot 即可自动转存。
 
@@ -325,11 +325,11 @@ docker compose up -d
 
 反向代理 → 云盘助手 → 添加 115，配置名称填 `115`
 
-![配置云盘助手](https://images.symedia.top/2025/09/21/20250921224635_0f7f5c39.png)
+![配置云盘助手](../../assets/images/posts/media-center-deployment/media-center-redia-cloud-helper.png)
 
 #### 步骤 2：填入 115 配置
 
-![115配置示例](https://images.symedia.top/2025/09/21/20250921224728_831d3529.png)
+![115配置示例](../../assets/images/posts/media-center-deployment/media-center-redia-115-config.png)
 
 #### 步骤 3：配置 Emby 服务器路径替换
 
@@ -343,13 +343,13 @@ docker compose up -d
 /CloudNAS/CloudDrive/天翼云盘 => 天翼云盘
 ```
 
-![Emby服务器配置](https://images.symedia.top/2025/09/21/20250921224506_0dceb6a4.png)
+![Emby服务器配置](../../assets/images/posts/media-center-deployment/media-center-redia-emby-server.png)
 
-![路径替换示例](https://images.symedia.top/2025/09/21/20250921225106_53733573.png)
+![路径替换示例](../../assets/images/posts/media-center-deployment/media-center-redia-path-replace.png)
 
 #### 步骤 4：保存并启用
 
-![Emby配置完成](https://images.symedia.top/2025/09/21/20250921224928_0d4edfa7.png)
+![Emby配置完成](../../assets/images/posts/media-center-deployment/media-center-redia-emby-done.png)
 
 启用服务器 → 保存配置
 
