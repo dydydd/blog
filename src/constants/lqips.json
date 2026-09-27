@@ -101,5 +101,14 @@
   "src:assets/images/posts/vibe-coding-cn/04-star-history.png": "f9f8f8fffefefdfdfd",
   "src:assets/images/posts/vibe-coding-cn/03-zread-overview.jpg": "f1f1eef0f1eff8f7f4",
   "src:assets/images/posts/vibe-coding-cn/02-wiki-nav.jpg": "dbdcdde0e1e2fcfdfe",
-  "src:assets/images/posts/vibe-coding-cn/01-repo-home.jpg": "dedfe0dbdddff9fafa"
+  "src:assets/images/posts/vibe-coding-cn/01-repo-home.jpg": "dedfe0dbdddff9fafa",
+  "src:assets/images/posts/claude-code-guide/08-docs-memory.png": "f2f2edf5f5eff6f6f0",
+  "src:assets/images/posts/claude-code-guide/07-docs-mcp.png": "f2f2edf3f3eff7f8f4",
+  "src:assets/images/posts/claude-code-guide/06-docs-skills.png": "f3f3eef5f5f0eef1f0",
+  "src:assets/images/posts/claude-code-guide/05-docs-hooks.png": "f2f3edf6f7f0f4f4ee",
+  "src:assets/images/posts/claude-code-guide/04-cli-help.png": "2424292020251d1d22",
+  "src:assets/images/posts/claude-code-guide/03-tui-welcome.png": "26262b1d1d221d1d22",
+  "src:assets/images/posts/claude-code-guide/02-docs-nav.png": "f0f0eaf4f4eef0f1ef",
+  "src:assets/images/posts/claude-code-guide/01-docs-quickstart.png": "f4f4eef7f7f0f5f7f4",
+  "src:assets/images/posts/claude-code-guide/00-cover.png": "c8cacbc5c6c7fdfefe"
 }
