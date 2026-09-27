@@ -1,9 +1,9 @@
 ---
 title: 看懂 AS 号与国际线路：从 CN2、9929、CMI 到 NTT/GTT，选 VPS 前必须补的一堂网络课
-published: 2026-09-28
+published: 2026-09-28T11:00:00+08:00
 description: 什么是 AS 号？Tier 1 运营商和精品网是怎么回事？本文用真实 BGP 数据与 traceroute 实测，系统讲透 163、CN2 GT/GIA、联通 9929、移动 CMI/CMIN2 以及 NTT、GTT、Cogent 等国际线路的区别与选购方法。
 tags: [网络基础, AS号, BGP, VPS, CN2, "9929", CMI, 线路科普]
-category: 技术教程
+category: 网络与自托管
 draft: false
 image: ../../assets/images/posts/as-number-and-vps-routes/06-submarine-cable-map.png
 ---

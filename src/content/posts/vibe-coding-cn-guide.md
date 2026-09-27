@@ -1,9 +1,9 @@
 ---
 title: vibe-coding-cn 仓库导读：一套中文 Vibe Coding 的"道法术器"工程体系
-published: 2026-09-28
+published: 2026-09-28T15:30:00+08:00
 description: tradecatlabs/vibe-coding-cn 是 16.7k star 的中文 Vibe Coding 从入门到精通教程。本文不抄内容，只做导读：拆解它的六条核心命题、道法术器框架、拼好码方法论、仓库结构和新手路线，帮你判断这套体系值不值得跟。
 tags: [Vibe-Coding, AI编程, GitHub, 仓库导读, Agent, 工程闭环]
-category: 资源推荐
+category: AI编程
 draft: false
 image: ../../assets/images/posts/vibe-coding-cn/01-repo-home.jpg
 ---

@@ -3,7 +3,7 @@ title: Termius 土耳其区订阅攻略：一年仅需 20 元
 published: 2026-06-29
 description: 利用微软土耳其区定价差异，把 Termius Premium 的年费从 $79.99 降到 ₺85（约 20 元人民币），老版本安装 + 土区账号 + 礼品卡全套操作手册。
 tags: [Termius, SSH, 土耳其, 薅羊毛, 微软商店, 教程]
-category: 技术教程
+category: 海外订阅
 draft: false
 image: ../../assets/images/posts/termius-turkey-subscription-guide/termius-region-turkey.jpeg
 ---

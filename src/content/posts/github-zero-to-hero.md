@@ -1,9 +1,9 @@
 ---
 title: 超详细 GitHub 入门到精通指南：核心概念、实战操作与高效技巧
-published: 2026-09-27
+published: 2026-09-27T23:30:00+08:00
 description: 从零梳理 Git 与 GitHub 的本质区别、四大核心概念、SSH/PAT 配置、看懂开源项目、提 PR 规范、GitHub Actions 与 Pages 部署，以及 7 个代价最高的新手常见坑。配全套真实操作截图。
 tags: [GitHub, Git, 开源, CI/CD, GitHub Actions, GitHub Pages, 教程]
-category: 技术教程
+category: 编程入门
 draft: false
 image: ../../assets/images/posts/github-zero-to-hero/github-cover.png
 ---

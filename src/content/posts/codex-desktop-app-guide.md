@@ -1,9 +1,9 @@
 ---
 title: Codex 桌面客户端最全使用教程：从安装登录到 Worktree、Skills、自动化与 Computer Use
-published: 2026-09-28
+published: 2026-09-28T13:45:00+08:00
 description: 2026 年最值得上手的 AI 编程客户端。本文覆盖 Codex App（现已并入 ChatGPT 桌面端）的下载安装、账号与计费、界面布局、项目与线程、权限沙箱、Git 工作树、代码审查提交、Skills、定时任务、插件与内置浏览器、Computer Use、文档生成、手机远程指挥和常见坑，一篇讲透。
 tags: [Codex, OpenAI, AI编程, 桌面客户端, 教程, Agent, Git-Worktree]
-category: 技术教程
+category: AI编程
 draft: false
 image: ../../assets/images/posts/codex-desktop-app-guide/01-sidebar-threads.jpg
 ---

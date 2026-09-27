@@ -3,7 +3,7 @@ title: NodeWarden：把你的密码库搬到 Cloudflare Workers 上，不要服�
 published: 2026-06-29
 description: NodeWarden 是运行在 Cloudflare Workers 上的 Bitwarden 兼容密码管理服务端。不需要 VPS，不需要 Docker，Fork 一下连接 CF 即可一键部署，自带 PWA 离线访问和云端备份。
 tags: [NodeWarden, Bitwarden, 密码管理, Cloudflare, Workers, 自托管, 开源]
-category: 技术教程
+category: 网络与自托管
 draft: false
 image: ../../assets/images/posts/nodewarden-cloudflare-workers-password-manager/nodewarden-cover.jpg
 ---

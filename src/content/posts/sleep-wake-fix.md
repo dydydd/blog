@@ -3,7 +3,7 @@ title: 机械革命蛟龙16K 睡眠无法唤醒修复教程
 published: 2026-06-07
 description: 解决 Arch Linux 下 NVIDIA 独显笔记本睡眠无法唤醒的问题
 tags: [Linux, Arch, NVIDIA, 睡眠, 硬件]
-category: 技术教程
+category: 硬件与系统
 draft: false
 image: ../../assets/images/posts/sleep-wake-fix/arch-linux-sleep-fix.png
 ---

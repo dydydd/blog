@@ -1,9 +1,9 @@
 ---
 title: Claude 防封号与稳定订阅全指南：环境搭建、支付闭环与避坑心法
-published: 2026-09-27
+published: 2026-09-28T09:30:00+08:00
 description: 深度融合两篇一线出海大佬踩坑经验，系统拆解 Claude 封号的底层风控信号，从本地设备残留清理、时区与分流规则、纯净 IP 判定，到外区 Apple ID + 礼品卡官方订阅闭环，打造零代充、零黑卡的最稳使用方案。
 tags: [Claude, Anthropic, AI订阅, 防封号, 科学上网, AppleID, 经验分享]
-category: 技术教程
+category: 海外订阅
 draft: false
 image: ../../assets/images/posts/claude-anti-ban-and-subscription-guide/claude-cover.png
 ---
