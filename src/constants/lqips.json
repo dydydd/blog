@@ -110,5 +110,10 @@
   "src:assets/images/posts/claude-code-guide/03-tui-welcome.png": "26262b1d1d221d1d22",
   "src:assets/images/posts/claude-code-guide/02-docs-nav.png": "f0f0eaf4f4eef0f1ef",
   "src:assets/images/posts/claude-code-guide/01-docs-quickstart.png": "f4f4eef7f7f0f5f7f4",
-  "src:assets/images/posts/claude-code-guide/00-cover.png": "c8cacbc5c6c7fdfefe"
+  "src:assets/images/posts/claude-code-guide/00-cover.png": "c8cacbc5c6c7fdfefe",
+  "src:assets/images/posts/emby-connect-exchange-vuln/05-nginx-block.png": "272b2d1d1f251b1d23",
+  "src:assets/images/posts/emby-connect-exchange-vuln/04-fix-principles.png": "272f342d2d31292b31",
+  "src:assets/images/posts/emby-connect-exchange-vuln/03-attack-chain.png": "5556595c5c5f595659",
+  "src:assets/images/posts/emby-connect-exchange-vuln/02-emby-home.png": "e0e7e2b8b8b9c2c2c3",
+  "src:assets/images/posts/emby-connect-exchange-vuln/01-emby-releases.png": "dcdddee1e2e2fdfdfd"
 }
