@@ -301,3 +301,116 @@ body.wallpaper-transparent .float-panel {
         display: none !important;
     }
 }
+
+/* ============================================
+ * 灵动岛模式 (siteConfig.navbar.islandStyle)
+ * 整条导航收拢为顶部居中的悬浮玻璃药丸。
+ * 注意：基础规则的选择器组含 #wallpaper-wrapper ~ * 变体（3 个 id），
+ * 整组按最高特异度参与层叠，因此后续状态/媒体规则必须带同等前缀变体。
+ * ============================================ */
+
+#navbar-wrapper #navbar.island > div.island-shell,
+#wallpaper-wrapper ~ * #navbar-wrapper #navbar.island > div.island-shell {
+    position: relative;
+    width: fit-content;
+    max-width: calc(100vw - 16px);
+    margin-inline: auto;
+    margin-top: 0.5rem;
+    height: 3.75rem;
+    padding-inline: 0.6rem;
+    pointer-events: auto;
+    border-radius: 9999px !important;
+    background: rgba(255, 255, 255, 0.62) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(var(--navbar-glass-blur, 20px)) saturate(1.4) !important;
+    -webkit-backdrop-filter: blur(var(--navbar-glass-blur, 20px)) saturate(1.4) !important;
+    box-shadow:
+        0 6px 24px rgba(0, 0, 0, 0.10),
+        0 1px 3px rgba(0, 0, 0, 0.06) !important;
+    transition:
+        height 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        margin-top 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+        backdrop-filter 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root.dark #navbar-wrapper #navbar.island > div.island-shell,
+:root.dark #wallpaper-wrapper ~ * #navbar-wrapper #navbar.island > div.island-shell {
+    background: rgba(24, 24, 27, 0.6) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    box-shadow:
+        0 6px 28px rgba(0, 0, 0, 0.45),
+        0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 岛外的 #navbar 区域不拦截点击 */
+#navbar.island {
+    pointer-events: none;
+}
+
+/* 内容行：收缩时整行等比缩小，按钮/文字一起变紧凑 */
+#navbar.island .island-row {
+    transform-origin: center center;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 滚动收缩态（JS 按滚动方向切换 island-shrunk） */
+#navbar-wrapper #navbar.island.island-shrunk > div.island-shell,
+#wallpaper-wrapper ~ * #navbar-wrapper #navbar.island.island-shrunk > div.island-shell {
+    height: 3.1rem;
+    margin-top: 0.35rem;
+}
+
+#navbar.island.island-shrunk .island-row {
+    transform: scale(0.8);
+}
+
+/* 岛内元素圆角药丸化 */
+#navbar.island .island-row .btn-plain {
+    border-radius: 9999px;
+}
+#navbar.island .island-row #search-bar {
+    border-radius: 9999px;
+    margin-right: 0.25rem;
+}
+
+/* 菜单与操作区之间的细分隔线 */
+#navbar.island .island-divider {
+    width: 1px;
+    height: 1.75rem;
+    margin-inline: 0.45rem;
+    background: rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+:root.dark #navbar.island .island-divider {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* 面板锚定在岛下方水平居中（左右归零 + margin auto，避开 float-panel 的 translate 收起动画） */
+#navbar.island #music-nav-panel {
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+#navbar.island #search-panel {
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: min(30rem, calc(100vw - 24px));
+}
+
+@media (max-width: 1023px) {
+    #navbar-wrapper #navbar.island > div.island-shell,
+    #wallpaper-wrapper ~ * #navbar-wrapper #navbar.island > div.island-shell {
+        height: 3.25rem;
+    }
+    #navbar-wrapper #navbar.island.island-shrunk > div.island-shell,
+    #wallpaper-wrapper ~ * #navbar-wrapper #navbar.island.island-shrunk > div.island-shell {
+        height: 2.85rem;
+    }
+    #navbar.island .island-divider {
+        display: none;
+    }
+}

@@ -84,6 +84,8 @@ export const siteConfig: SiteConfig = {
 		followTheme: false,
 		// 导航栏是否固定在顶部并始终可见
 		stickyNavbar: true,
+		// 灵动岛模式：整条导航收拢为顶部居中的悬浮药丸，向下滚动收缩、向上滚动恢复
+		islandStyle: true,
 	},
 
 	// 站点开始日期，用于统计运行天数

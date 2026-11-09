@@ -44,6 +44,7 @@ const navbarTitle = siteConfig.navbar.title || siteConfig.title;
 // 获取导航栏宽度配置
 const navbarWidthFull = siteConfig.navbar.widthFull ?? false;
 const navbarMenuAlign = siteConfig.navbar.menuAlign ?? "center";
+const islandStyle = siteConfig.navbar.islandStyle ?? false;
 const isNavbarMenuCentered = navbarMenuAlign === "center";
 
 // 检查是否为首页
@@ -103,12 +104,13 @@ if (isLocalSrcLogo) {
 	}
 }
 ---
-<div id="navbar" class="z-50" style={`--navbar-glass-blur: ${navbarBlur}px;`} data-transparent-mode={navbarTransparentMode} data-enable-blur={String(navbarEnableBlur)} data-is-home={isHomePageCheck} data-full-width={navbarWidthFull}>
+<div id="navbar" class:list={["z-50", islandStyle && "island"]} style={`--navbar-glass-blur: ${navbarBlur}px;`} data-transparent-mode={navbarTransparentMode} data-enable-blur={String(navbarEnableBlur)} data-is-home={isHomePageCheck} data-full-width={navbarWidthFull}>
     <div class:list={[
         className,
-        "overflow-visible! h-18 px-4"
+        "overflow-visible! h-18 px-4",
+        islandStyle && "island-shell"
     ]}>
-        <div class="mx-auto h-full w-full max-w-(--page-width) grid grid-cols-[auto_minmax(0,1fr)_auto] items-center">
+        <div class="island-row mx-auto h-full w-full max-w-(--page-width) grid grid-cols-[auto_minmax(0,1fr)_auto] items-center">
             <a href={url('/')} class="btn-plain scale-animation rounded-lg h-13 px-5 font-bold active:scale-95">
                 <div class:list={[
                     "flex flex-row items-center text-md",
@@ -147,7 +149,8 @@ if (isLocalSrcLogo) {
                     return <DropdownMenu link={l} />;
                 })}
             </div>
-            <div class="flex col-start-3 justify-self-end">
+            <div class="flex col-start-3 justify-self-end items-center">
+                {islandStyle && <div class="island-divider"></div>}
                 <!--<SearchPanel client:load>-->
                 <Search
                     client:load
@@ -294,6 +297,31 @@ function loadButtonScript() {
 }
 
 loadButtonScript();
+
+// —— 灵动岛：向下滚动收缩、向上滚动恢复 ——
+function initIslandShrink() {
+    const navbar = document.getElementById("navbar");
+    if (!navbar || !navbar.classList.contains("island")) return;
+    let lastY = window.scrollY || 0;
+    function update() {
+        const y = window.pageYOffset || document.documentElement.scrollTop;
+        if (document.documentElement.classList.contains("is-page-transitioning")) {
+            navbar!.classList.remove("island-shrunk");
+            lastY = y; return;
+        }
+        if (y < 50) navbar!.classList.remove("island-shrunk");
+        else if (y > lastY + 2) navbar!.classList.add("island-shrunk");
+        else if (y < lastY - 6) navbar!.classList.remove("island-shrunk");
+        lastY = y;
+    }
+    const w = window as any;
+    if (w.islandShrinkHandler) window.removeEventListener("scroll", w.islandShrinkHandler);
+    w.islandShrinkHandler = update;
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+}
+(window as any).initIslandShrink = initIslandShrink;
+initIslandShrink();
 
 // 为semifull模式添加滚动检测逻辑
 function initSemifullScrollDetection() {
