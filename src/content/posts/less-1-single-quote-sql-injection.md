@@ -1,6 +1,6 @@
 ---
 title: Less-1：单引号字符型 SQL 注入
-published: 2026-07-03
+published: 2026-06-19T12:00:00+08:00
 description: 记录 sqli-labs Less-1 单引号字符型注入的判断字段数、联合查询回显和 information_schema 查询流程。
 tags: [SQL注入, Web安全, sqli-labs, MySQL, 联合查询]
 category: 网络安全

@@ -1,6 +1,6 @@
 ---
 title: 家庭媒体中心全家桶部署教程：CD2 + Emby + Symedia + Redia
-published: 2026-06-28
+published: 2026-06-28T12:00:00+08:00
 description: 基于 Docker Compose 的完整媒体库搭建教程，从 CloudDrive2 挂载网盘到 Symedia 刮削、Emby 海报墙再到 Redia 302 直链播放，一步步教你搭建属于你自己的家庭媒体中心。
 tags: [Docker, NAS, Emby, 媒体中心, 网盘, "115"]
 category: 网络与自托管
