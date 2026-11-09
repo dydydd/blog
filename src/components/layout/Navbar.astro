@@ -300,24 +300,26 @@ loadButtonScript();
 
 // —— 灵动岛：向下滚动收缩、向上滚动恢复 ——
 function initIslandShrink() {
-    const navbar = document.getElementById("navbar");
-    if (!navbar || !navbar.classList.contains("island")) return;
     let lastY = window.scrollY || 0;
     function update() {
+        // swup 页面切换会重建 navbar DOM，必须每次重新查找，不能闭包持有旧节点
+        const navbar = document.getElementById("navbar");
+        if (!navbar || !navbar.classList.contains("island")) return;
         const y = window.pageYOffset || document.documentElement.scrollTop;
         if (document.documentElement.classList.contains("is-page-transitioning")) {
-            navbar!.classList.remove("island-shrunk");
+            navbar.classList.remove("island-shrunk");
             lastY = y; return;
         }
-        if (y < 50) navbar!.classList.remove("island-shrunk");
-        else if (y > lastY + 2) navbar!.classList.add("island-shrunk");
-        else if (y < lastY - 6) navbar!.classList.remove("island-shrunk");
+        if (y < 50) navbar.classList.remove("island-shrunk");
+        else if (y > lastY + 2) navbar.classList.add("island-shrunk");
+        else if (y < lastY - 6) navbar.classList.remove("island-shrunk");
         lastY = y;
     }
     const w = window as any;
-    if (w.islandShrinkHandler) window.removeEventListener("scroll", w.islandShrinkHandler);
-    w.islandShrinkHandler = update;
-    window.addEventListener("scroll", update, { passive: true });
+    if (!w.islandShrinkHandler) {
+        w.islandShrinkHandler = update;
+        window.addEventListener("scroll", update, { passive: true });
+    }
     update();
 }
 (window as any).initIslandShrink = initIslandShrink;
