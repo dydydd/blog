@@ -1,6 +1,6 @@
 # 人生实验室
 
-个人技术博客，基于 [Firefly](https://github.com/whyoume545/astro-ThemeFirefly) 主题（Astro 7 + Svelte 5 + Tailwind CSS 4），部署在 GitHub Pages，线上地址：[ld.ac.cn](https://ld.ac.cn)。
+个人技术博客，基于 [Firefly](https://github.com/CuteLeaf/Firefly) 主题（Astro 7 + Svelte 5 + Tailwind CSS 4），部署在 GitHub Pages，线上地址：[ld.ac.cn](https://ld.ac.cn)。
 
 ## 内容结构
 
